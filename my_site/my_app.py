@@ -26,7 +26,9 @@ def send_welcome(message):
 
 @bot.message_handler(func=lambda m: True)  # этот обработчик реагирует все прочие сообщения
 def send_len(message):
-    bot.send_message(message.chat.id, 'В вашем сообщении {} символов.'.format(len(message.text)))
+    sentence = message.text
+    sentence = sentence.split (" ")
+    bot.send_message(message.chat.id, 'Количество слов в вашем сообщении - {}.'.format(len(sentence)))
 
 
 # пустая главная страничка для проверки
