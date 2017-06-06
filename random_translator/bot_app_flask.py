@@ -1,4 +1,4 @@
-##логин бота @donquijote, он работает на http://donquijote.pythonanywhere.com
+##логин бота @don_quijote_bot, он работает на http://donquijote.pythonanywhere.com
 ##базу лемм для бота делает отдельный код gramrazbs.py (в этой же папке)
 
 import telebot
